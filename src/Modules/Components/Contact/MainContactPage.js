@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react';
 import styles from '../../Styles/MainContact.module.css';
-import { FAKE_REVIEW_TEXT } from '../Constants/Constants';
 
 function MainContactPage({width}) {
 
