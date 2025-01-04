@@ -14,84 +14,84 @@ function CheckStylesection() {
     <div className={combostyles["container"]}>
       {/* Left Image with Formal Dress */}
       <div className={combostyles["image-container"]}>
-        <img
+        {/* <img
         src="/images/shoes.png"
           alt="Background"
           className={combostyles["image"]}
-        />
+        /> */}
       <p className={combostyles["shoes-text"]}>Green Formal</p>
       </div>
 
       {/* Right Image with Men Combo, More, and Plus */}
       <div className={combostyles["image-container"]}>
-        <img
+        {/* <img
           src="/images/shoes.png"
           alt="Background"
           className={combostyles["image"]}
-        />
+        /> */}
       <p className={combostyles["shoes-text"]}>Green Formal</p>
 
        </div>
        <div className={combostyles["image-container"]}>
-        <img
+        {/* <img
           src="/images/shoes.png"
           alt="Background"
           className={combostyles["image"]}
-        />
+        /> */}
       <p className={combostyles["shoes-text"]}>Green Formal</p>
 
        </div>
        <div className={combostyles["image-container"]}>
-        <img
+        {/* <img
           src="/images/shoes.png"
           alt="Background"
           className={combostyles["image"]}
-        />
+        /> */}
       <p className={combostyles["shoes-text"]}>Green Formal</p>
 
        </div>
        <div className={combostyles["image-container"]}>
-        <img
+        {/* <img
           src="/images/shoes.png"
           alt="Background"
           className={combostyles["image"]}
-        />
+        /> */}
       <p className={combostyles["shoes-text"]}>Green Formal</p>
 
        </div>
        <div className={combostyles["image-container"]}>
-        <img
+        {/* <img
           src="/images/shoes.png"
           alt="Background"
           className={combostyles["image"]}
-        />
+        /> */}
       <p className={combostyles["shoes-text"]}>Green Formal</p>
 
        </div>
        <div className={combostyles["image-container"]}>
-        <img
+        {/* <img
           src="/images/shoes.png"
           alt="Background"
           className={combostyles["image"]}
-        />
+        /> */}
       <p className={combostyles["shoes-text"]}>Green Formal</p>
 
        </div>
        <div className={combostyles["image-container"]}>
-        <img
+        {/* <img
           src="/images/shoes.png"
           alt="Background"
           className={combostyles["image"]}
-        />
+        /> */}
       <p className={combostyles["shoes-text"]}>Green Formal</p>
 
        </div>
        <div className={combostyles["image-container"]}>
-        <img
+        {/* <img
           src="/images/shoes.png"
           alt="Background"
           className={combostyles["image"]}
-        />
+        /> */}
       <p className={combostyles["shoes-text"]}>Green Formal</p>
 
        </div>

@@ -54,7 +54,7 @@ const handleLinkClick = () => {
     >
       <IoIosMenu size={40} />
     </div>
-
+{/* 
     <img
   src="/images/logo.png"
   alt="menu"
@@ -66,7 +66,7 @@ const handleLinkClick = () => {
     width: '90px',
     height: '50px',
   }}
-/>
+/> */}
 <p
   style={{
     position: 'absolute',

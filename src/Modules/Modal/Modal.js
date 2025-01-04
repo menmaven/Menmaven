@@ -51,7 +51,7 @@ const Modal = ({
                 onClick={(e) => e.stopPropagation()}
             >
                 <div className={AppStyles['close-btn']} onClick={onClose}>
-                    <img src={'https://cdn.venuemonk.com/vm-white-cross-icon.png'} style={{width:'15px'}} />
+                    {/* <img src={'https://cdn.venuemonk.com/vm-white-cross-icon.png'} style={{width:'15px'}} /> */}
                 </div>
                 {
                     customHeader ||
