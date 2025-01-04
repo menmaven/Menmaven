@@ -12,11 +12,11 @@ function MainContactPage({width}) {
     <div>
 { width  > 768 ?
       <div className={styles.container}>
-        <img
+        {/* <img
           className={styles.backgroundImage}
           src={'https://vmnk.gumlet.io/get-quote-imagethird.svg'}
           alt="Background"
-        />
+        /> */}
         <div className={styles.card}>
           <div>
             <h2 className={styles.heading}>

@@ -9,7 +9,7 @@ export function PrevArrow(props) {
       style={{ ...style}}
       onClick={props.onClick}
     >
-        <img src={props.image ? props.image : 'https://cdn.venuemonk.com/noun-arrow.png'} alt='prev'  style={{transform: 'rotate(180deg)'}}/>
+        {/* <img src={props.image ? props.image : 'https://cdn.venuemonk.com/noun-arrow.png'} alt='prev'  style={{transform: 'rotate(180deg)'}}/> */}
     </div>
   );
 }
