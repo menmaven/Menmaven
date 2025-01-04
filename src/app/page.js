@@ -199,7 +199,7 @@ export default function () {
           isFixed ? BannerStyles["fixed"] : ""
         } ${isHeaderVisible ? "" : BannerStyles["hidden-header"]}`}
       >
-        <h2 className={BannerStyles["Heaer-text"]}>
+        <h2 className={BannerStyles["header-text"]}>
           MEN<span style={{ color: "black", marginLeft: "4px" }}>MAVEN</span>
         </h2>
         <DesktopNavBar />

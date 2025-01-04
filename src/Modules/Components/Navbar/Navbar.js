@@ -74,7 +74,7 @@ const handleLinkClick = () => {
     top: '50%',
     transform: 'translate(-50%, 20px)', // Position below the logo
     fontSize: '14px', // Adjust font size if needed
-    fontWeight: 'bold', // Optional: Make the text bold
+    fontFamily:'BankGothic Md BT'
   }}
 >
   MEN MAVEN
