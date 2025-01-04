@@ -13,20 +13,20 @@ function Combosection({width}) {
       </div>
       }
       <div className={combostyles["image-container"]}>
-        {/* <img
+        <img
         src="/images/comboimageone.jpg"
           alt="Background"
           className={combostyles["image"]}
-        /> */}
+        />
         <div className={combostyles["formal-dress-text"]}>Formal Dress</div>
       </div>
 
       <div className={combostyles["image-container"]}>
-        {/* <img
+        <img
           src="/images/comboimagetwo.jpg"
           alt="Background"
           className={combostyles["image"]}
-        /> */}
+        />
         <div className={combostyles["men-combo-container"]}>
           <div className={combostyles["men-combo-text"]}>Men Combo</div>
           <div className={combostyles["more-plus-container"]}>

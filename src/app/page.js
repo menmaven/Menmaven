@@ -129,7 +129,7 @@ import DesktopNavBar from "@/Modules/Components/Banner/Components/DesktopNavBar"
 import BannerStyles from "../Modules/Styles/Banner.module.css";
 import MobileBanner from "@/Modules/Components/Banner/MobileBanner";
 
-const Page = ()=> {
+export default function () {
   const [width, setWidth] = useState(0);
   const [isFixed, setIsFixed] = useState(false); // State to track if the header is fixed
   const [lastScrollY, setLastScrollY] = useState(0); // State to track the last scroll position
@@ -225,6 +225,3 @@ const Page = ()=> {
     </div>
   );
 }
-
-
-export default Page
