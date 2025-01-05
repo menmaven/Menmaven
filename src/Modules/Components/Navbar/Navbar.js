@@ -8,6 +8,7 @@ import { BsSearch } from "react-icons/bs";
 import { CiHeart } from "react-icons/ci";
 import { TbShoppingBagPlus } from "react-icons/tb";
 import { IoIosMenu } from "react-icons/io";
+import { HiOutlineShoppingBag } from "react-icons/hi2";
 import MobileBanner from "../Banner/MobileBanner";
 // import logo from "../images/logo.png";
 
@@ -54,7 +55,7 @@ const handleLinkClick = () => {
     >
       <IoIosMenu size={40} />
     </div>
-{/* 
+
     <img
   src="/images/logo.png"
   alt="menu"
@@ -66,7 +67,7 @@ const handleLinkClick = () => {
     width: '90px',
     height: '50px',
   }}
-/> */}
+/>
 <p
   style={{
     position: 'absolute',
@@ -94,7 +95,7 @@ const handleLinkClick = () => {
     >
       <BsSearch size={25} />
       <CiHeart size={30} />
-      <TbShoppingBagPlus size={30} />
+      <HiOutlineShoppingBag size={30} />
     </div>
 
 <Modal

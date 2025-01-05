@@ -128,6 +128,7 @@ import Slider from "react-slick";
 import DesktopNavBar from "@/Modules/Components/Banner/Components/DesktopNavBar";
 import BannerStyles from "../Modules/Styles/Banner.module.css";
 import MobileBanner from "@/Modules/Components/Banner/MobileBanner";
+import DetailsPage from "../Modules/Components/DetailsPage/DetailsPage"
 
 export default function () {
   const [width, setWidth] = useState(0);
@@ -215,7 +216,13 @@ export default function () {
       </Slider>
       </>
 }
-
+<Route path='/shoes/:id'>
+            <DetailsPage
+              cart={cart}
+              cartHandler={cartHandler}
+            />
+            <Footer />
+          </Route>
       <Combosection width= {width}/>
       <CheckStylesection />
       <Combosection />

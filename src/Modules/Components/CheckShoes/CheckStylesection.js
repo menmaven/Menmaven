@@ -3,6 +3,8 @@
 import React from 'react';
 import combostyles from "../../Styles/CheckStyle.module.css";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
+import Shoes from '../Constants/Shoes';
+import { Link } from 'react-router-dom';
 function CheckStylesection() {
   return (
     <div>
@@ -13,88 +15,22 @@ function CheckStylesection() {
 
     <div className={combostyles["container"]}>
       {/* Left Image with Formal Dress */}
+
+{Shoes.map((shoes, index) => (
+  <div>
+            <Link to={'shoes/' + shoes._id}>
+
       <div className={combostyles["image-container"]}>
         <img
-        src="/images/shoes.png"
+        src={shoes.img}
           alt="Background"
           className={combostyles["image"]}
         />
-      <p className={combostyles["shoes-text"]}>Green Formal</p>
+      <p className={combostyles["shoes-text"]}>{shoes.name}</p>
       </div>
-
-      {/* Right Image with Men Combo, More, and Plus */}
-      <div className={combostyles["image-container"]}>
-        <img
-          src="/images/shoes.png"
-          alt="Background"
-          className={combostyles["image"]}
-        />
-      <p className={combostyles["shoes-text"]}>Green Formal</p>
-
-       </div>
-       <div className={combostyles["image-container"]}>
-        <img
-          src="/images/shoes.png"
-          alt="Background"
-          className={combostyles["image"]}
-        />
-      <p className={combostyles["shoes-text"]}>Green Formal</p>
-
-       </div>
-       <div className={combostyles["image-container"]}>
-        <img
-          src="/images/shoes.png"
-          alt="Background"
-          className={combostyles["image"]}
-        />
-      <p className={combostyles["shoes-text"]}>Green Formal</p>
-
-       </div>
-       <div className={combostyles["image-container"]}>
-        <img
-          src="/images/shoes.png"
-          alt="Background"
-          className={combostyles["image"]}
-        />
-      <p className={combostyles["shoes-text"]}>Green Formal</p>
-
-       </div>
-       <div className={combostyles["image-container"]}>
-        <img
-          src="/images/shoes.png"
-          alt="Background"
-          className={combostyles["image"]}
-        />
-      <p className={combostyles["shoes-text"]}>Green Formal</p>
-
-       </div>
-       <div className={combostyles["image-container"]}>
-        <img
-          src="/images/shoes.png"
-          alt="Background"
-          className={combostyles["image"]}
-        />
-      <p className={combostyles["shoes-text"]}>Green Formal</p>
-
-       </div>
-       <div className={combostyles["image-container"]}>
-        <img
-          src="/images/shoes.png"
-          alt="Background"
-          className={combostyles["image"]}
-        />
-      <p className={combostyles["shoes-text"]}>Green Formal</p>
-
-       </div>
-       <div className={combostyles["image-container"]}>
-        <img
-          src="/images/shoes.png"
-          alt="Background"
-          className={combostyles["image"]}
-        />
-      <p className={combostyles["shoes-text"]}>Green Formal</p>
-
-       </div>
+      </Link>
+    </div>
+))}
        </div>
 
     </div>
