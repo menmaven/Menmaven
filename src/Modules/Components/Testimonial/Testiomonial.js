@@ -36,7 +36,7 @@ function Testimonial({
           <p className={styles.reviewText}>{reviewtext}</p>
         </div>
         <div className={styles.userInfoContainer}>
-          {/* <img src="/images/Avtar.png" style={{width:'60px', height:'60px',borderRadius:'50%'}} /> */}
+          <img src="/images/Avtar.png" style={{width:'60px', height:'60px',borderRadius:'50%'}} />
           <div className={styles.userDetails}>
             <p className={styles.userName}>{username}</p>
             <p className={styles["user-address"]}>{address}</p>
