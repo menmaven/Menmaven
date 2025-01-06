@@ -40,7 +40,7 @@ const handleLinkClick = () => {
 };
   
   return (
-    <nav className="navbar-one" style={{ position: 'relative', height: '80px', display: 'flex', alignItems: 'center' }}>
+    <nav className="navbar-one" style={{ position: 'relative',display: 'flex', alignItems: 'center' }}>
     <div
       style={{
         position: 'absolute',
@@ -68,7 +68,7 @@ const handleLinkClick = () => {
     height: '50px',
   }}
 />
-<p
+<span
   style={{
     position: 'absolute',
     left: '50%',
@@ -79,7 +79,7 @@ const handleLinkClick = () => {
   }}
 >
   MEN MAVEN
-</p>
+</span>
 
 
     <div

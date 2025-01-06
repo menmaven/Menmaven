@@ -1,123 +1,203 @@
-import { faCartArrowDown, faCheckCircle, faWindowClose } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useEffect, useState } from 'react';
-import { useHistory, useParams } from 'react-router-dom';
-import allFoods from '../../fakeData/index';
-import suggestionFood from '../../fakeData/suggestionFood';
-import RecommendFood from '../RecommendFood/RecommendFood';
-import styles from './FoodDetails.module.css';
+import React, { useEffect, useState } from "react";
+import { useRouter } from "next/router"; // Use useRouter from Next.js
+import allItems from "../Constants/index";
+import styles from "../../Styles/Details.module.css";
+import suggestion from "../Constants/suggestion";
+import Recommended from "../Recommended/Recommended";
+import Link from "next/link";
 
-const FoodDetails = (props) => {
+const DetailsPage = ({ shoeDetails }) => {
+  const router = useRouter(); // useRouter hook for Next.js routing
+  const { id } = router.query; // Access the route parameter using query
+  const currentsuggestion = allItems.find((item) => item.id === id);
+
+  const [quantity, setQuantity] = useState(1); // State to manage quantity
+  const [size, setSize] = useState(null); // State to manage selected size
+  const [isSuccess, setIsSuccess] = useState(false);
+  
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  let history = useHistory();
-  const { id } = useParams();
-  const currentFood = allFoods.find((food) => food.id === id);
-
-  const [quantity, setQuantity] = useState(1);
-  const [isSuccess, setIsSuccess] = useState(false);
-
   useEffect(() => {
-    if (currentFood.quantity) {
-      setQuantity(currentFood.quantity);
+    if (currentsuggestion && currentsuggestion.quantity) {
+      setQuantity(currentsuggestion.quantity);
     }
-  }, [currentFood.quantity]);
-
-  const finalCartHandler = (currentFood) => {
-    currentFood.quantity = quantity;
-    props.cartHandler(currentFood);
-    setIsSuccess(true);
-  };
+  }, [currentsuggestion]);
 
   if (isSuccess) {
     setTimeout(() => setIsSuccess(false), 1500);
   }
 
-  const [suggestFoods, setSuggestFoods] = useState([]);
+  const [suggestItems, setSuggestItems] = useState([]);
+
+
+
+
+
+
+
+
+  const [cart, setCart] = useState([])
+
+  const cartHandler = currentItem => {
+
+    const alreadyAdded = cart.find(item => item.id === currentItem.id)
+
+    if (alreadyAdded) {
+      const reamingCarts = cart.filter(item => cart.id !== currentItem)
+      setCart(reamingCarts);
+    } else {
+      const newCart = [...cart, currentItem]
+      setCart(newCart);
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   useEffect(() => {
-    const suggestFood = suggestionFood.slice(0, 3);
-    setSuggestFoods(suggestFood);
+    const suggestItem = suggestion.slice(0, 3);
+    setSuggestItems(suggestItem);
   }, []);
 
-  const newSuggestionFood = () => {
-    const newSuggestFood = suggestionFood.slice(3, 6);
-    suggestionFood.splice(0, 3);
-    setSuggestFoods(newSuggestFood);
+  const newSuggestionItem = () => {
+    const newSuggestItems = suggestion.slice(3, 6);
+    suggestion.splice(0, 3);
+    setSuggestItems(newSuggestItems);
   };
 
   function goBack() {
-    history.push('/');
+    router.push("/"); // Use Next.js router to navigate
     window.scrollTo(0, 9999);
   }
 
+  // Handler for increasing quantity
+  const incrementQuantity = () => {
+    setQuantity(quantity + 1);
+  };
+
+  // Handler for decreasing quantity
+  const decrementQuantity = () => {
+    if (quantity > 1) {
+      setQuantity(quantity - 1);
+    }
+  };
+
+  const selectSize = (selectedSize) => {
+    setSize(selectedSize);
+  };
+
+  const finalCartHandler = currentItem => {
+    currentItem.quantity = quantity;
+
+    cartHandler(currentItem);
+    setIsSuccess(true);
+}
+
+if (isSuccess) {
+    setTimeout(() => setIsSuccess(false), 1500);
+}
+
+console.log(cart, "CARTITEM")
+
   return (
-    <div className={`container ${styles.container}`}>
-      <div className={`text-center ${styles.textCenter}`}>
-        <div onClick={goBack}>
-          <button
-            className={`${styles.closeButton}`}
-            onClick={newSuggestionFood}
-          >
-            <FontAwesomeIcon icon={faWindowClose} />
-            <span>Close</span>
+    <div className={styles['container']}>
+      <div className={styles['text-Center']}></div>
+
+      <div>
+        <img
+          src={shoeDetails.img}
+          alt={shoeDetails.name}
+          className={styles['image-container']}
+        />
+              <nav className={styles['breadcrumbs']}>
+        <Link href="/">Home</Link> / 
+        <Link href="/shoes"> Shoes</Link> / 
+        <span> {shoeDetails.name}</span>
+      </nav>
+      <div className={styles['details-container']}> 
+        <span className={styles['heading-text']}>{shoeDetails.name}</span>
+        {/* <p>{shoeDetails.description}</p> */}
+        {/* <p>{shoeDetails.story}</p> */}
+        <p className={styles['subheading']}>
+          <strong>Price: </strong>${shoeDetails.price}
+        </p>
+
+        {/* Size Selector */}
+        <div className={styles['size-container']}>
+        <span className={styles['subheading']}>Select Size:</span>
+  <div className={styles['button-wrapper']}>
+    {[7, 8, 9, 10, 11].map((shoeSize) => (
+      <button
+        key={shoeSize}
+        className={`${styles['size-button']} ${
+          size === shoeSize ? styles['active-size'] : ""
+        }`}
+        onClick={() => selectSize(shoeSize)}
+      >
+        {shoeSize}
+      </button>
+    ))}
+  </div>
+</div>
+
+
+        {/* Quantity Selector */}
+        <div className={styles['quantity-selector']}>
+        <span className={styles['subheading']}>Quantity:</span>
+          <button onClick={decrementQuantity} className={styles['size-button']}>
+            -
+          </button>
+          <span className={styles['quantity-display']}>{quantity}</span>
+          <button onClick={incrementQuantity} className={styles['size-button']}>
+            +
           </button>
         </div>
+        <div>
+        <button onClick={()=> finalCartHandler(currentsuggestion)} className={styles['add-item-btn']}>
+        Add To Bag
+          </button>
+        </div>
+        {isSuccess &&
+                            <p
+                                style={{color:'green'}}
+                            > Item added to Cart
+                            </p>
+                        }
       </div>
-      <div className={`row ${styles.foodDetailsRow}`}>
-        <div className={`col-md-7 ${styles.foodDetailsLeft}`}>
-          <h1 className={styles.foodName}>{currentFood.name}</h1>
-          <p className={styles.foodStory}>{currentFood.story}</p>
-          <div className={`${styles.cartControllerWrapper}`}>
-            <h2 className={styles.foodPrice}>₹{currentFood.price}</h2>
-            <div className={styles.cartController}>
-              <button
-                className={styles.quantityButton}
-                onClick={() => setQuantity(quantity <= 1 ? 1 : quantity - 1)}
-              >
-                -
-              </button>
-              <span className={styles.quantity}>{quantity}</span>
-              <button
-                className={styles.quantityButton}
-                onClick={() => setQuantity(quantity + 1)}
-              >
-                +
-              </button>
-            </div>
-          </div>
-          <div className={`${styles.action}`}>
-            <button
-              className={styles.addButton}
-              onClick={() => finalCartHandler(currentFood)}
-            >
-              <FontAwesomeIcon icon={faCartArrowDown} />
-              <span>Add</span>
-            </button>
-            {isSuccess && (
-              <p className={styles.successMessage}>
-                <FontAwesomeIcon icon={faCheckCircle} /> Item added to Cart
-              </p>
-            )}
-          </div>
-          <div className={styles.recommendations}>
-            {suggestFoods.map((recommendFood) => (
-              <RecommendFood
-                recommendFoods={recommendFood}
-                key={recommendFood.id}
-                currentFood={currentFood}
-              />
-            ))}
-          </div>
-        </div>
-        <div className={`col-md-5 ${styles.foodImageWrapper}`}>
-          <img className={styles.foodImage} src={currentFood.img} alt={currentFood.name} />
-        </div>
+
+      {/* Suggested Items */}
+      <div>
+        {suggestItems.map((recommendFood) => (
+          <Recommended
+            recommend={recommendFood}
+            key={recommendFood._id}
+            currentsuggestion={currentsuggestion}
+          ></Recommended>
+        ))}
+      </div>
       </div>
     </div>
   );
 };
 
-export default FoodDetails;
+export default DetailsPage;

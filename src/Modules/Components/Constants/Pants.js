@@ -1,4 +1,4 @@
-[
+var Pants = [
     {
         "id": "1",
         "name": "Classic Dress Pants",
@@ -288,3 +288,6 @@
         "price": 900
     }
 ]
+
+
+export default Pants;

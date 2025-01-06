@@ -36,11 +36,10 @@
 
   .container {
     margin: auto;
-    padding: 1rem;
     overflow-y: auto;
   }
   
-  .textCenter {
+  .text-Center {
     text-align: center;
   }
   
@@ -149,4 +148,144 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 1rem;
   }
+
+  .image-container
+  {
+    width: 100%;
+  }
+
+  .heading-text
+  {
+    font-size: 26px;
+    /* margin: 20px 20px 10px 10px; */
+    font-weight: 500;
+    font-family: "Todes light";
+  }
   
+  .breadcrumbs {
+    font-size: 16px;
+    margin: 20px 20px 0px 20px;
+    font-family: "Todes light";
+  }
+  
+  .breadcrumbs a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .breadcrumbs a:hover {
+    text-decoration: underline;
+  }
+  
+  .breadcrumbs span {
+    color: #555;
+  }
+  
+  .size-selector {
+    margin: 20px 0;
+  }
+  
+  .size-selector h4 {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .size-container {
+    /* display: flex;
+    flex-direction: column; 
+    align-items: center;  */
+    margin: 20px 0;
+  }
+  
+  .button-wrapper {
+    display: flex; 
+    /* justify-content: center; 
+    align-items: center;  */
+    flex-wrap: wrap; 
+    gap: 10px; 
+    margin-top: 10px;
+  }
+  
+  .size-button {
+    width: 40px; 
+    height: 40px; 
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    font-size: 25px;
+    font-weight: bold;
+    transition: 0.3s ease;
+  }
+  
+  .size-button:hover {
+    background-color: #555;
+    color: #fff;
+  }
+  
+  .active-size {
+    background-color: #555;
+    color: #fff;
+    font-weight: bold;
+    border: 2px solid #555;
+  }
+  .quantity-selector {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity-selector h4 {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .quantity-btn {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 0 5px;
+    border-radius: 5px;
+  }
+  
+  .quantity-btn:hover {
+    background-color: #0070f3;
+    color: #fff;
+  }
+  
+  .quantity-display {
+    font-size: 18px;
+    margin: 0 10px;
+    font-weight: bold;
+  }
+  
+  .details-container
+  {
+    margin: 5px 20px;
+  }
+
+  .subheading
+  {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .add-item-btn
+  {
+    padding: 12px 40px;
+    width: 70%;
+    background-color: black;
+    color: white;
+    font-family: "Todes light";
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }

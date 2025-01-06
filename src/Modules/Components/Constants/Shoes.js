@@ -1,6 +1,6 @@
 var Shoes = [
     {
-        "id": "1",
+        "_id": "1",
         "name": "Elegant Oxford",
         "category": "formal",
         "img": "https://via.placeholder.com/150/elegant-oxford.jpg",
@@ -9,16 +9,16 @@ var Shoes = [
         "price": 2500
     },
     {
-        "id": "2",
+        "_id": "2",
         "name": "Sporty Sneakers",
         "category": "sports",
-        "img": "https://via.placeholder.com/150/sporty-sneakers.jpg",
+        "img": "/images/comboimagetwo.jpg",
         "description": "how we dream about our future",
         "story": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularized in the 1960s.",
         "price": 2200
     },
     {
-        "id": "3",
+        "_id": "3",
         "name": "Running Pro",
         "category": "sports",
         "img": "https://via.placeholder.com/150/running-pro.jpg",
@@ -27,7 +27,7 @@ var Shoes = [
         "price": 2300
     },
     {
-        "id": "4",
+        "_id": "4",
         "name": "Leather Loafers",
         "category": "formal",
         "img": "https://via.placeholder.com/150/leather-loafers.jpg",
@@ -36,7 +36,7 @@ var Shoes = [
         "price": 2800
     },
     {
-        "id": "5",
+        "_id": "5",
         "name": "Casual Boat Shoes",
         "category": "casual",
         "img": "https://via.placeholder.com/150/casual-boat-shoes.jpg",
@@ -45,7 +45,7 @@ var Shoes = [
         "price": 2100
     },
     {
-        "id": "6",
+        "_id": "6",
         "name": "Sporty High-Top",
         "category": "sports",
         "img": "https://via.placeholder.com/150/sporty-high-top.jpg",
@@ -54,7 +54,7 @@ var Shoes = [
         "price": 2400
     },
     {
-        "id": "7",
+        "_id": "7",
         "name": "Weekend Sneakers",
         "category": "casual",
         "img": "https://via.placeholder.com/150/weekend-sneakers.jpg",
@@ -63,7 +63,7 @@ var Shoes = [
         "price": 2200
     },
     {
-        "id": "8",
+        "_id": "8",
         "name": "Classic Derby",
         "category": "formal",
         "img": "https://via.placeholder.com/150/classic-derby.jpg",
@@ -72,7 +72,7 @@ var Shoes = [
         "price": 2600
     },
     {
-        "id": "9",
+        "_id": "9",
         "name": "Slip-On Comfort",
         "category": "casual",
         "img": "https://via.placeholder.com/150/slip-on-comfort.jpg",
@@ -81,7 +81,7 @@ var Shoes = [
         "price": 2300
     },
     {
-        "id": "10",
+        "_id": "10",
         "name": "Classic Brogues",
         "category": "formal",
         "img": "https://via.placeholder.com/150/classic-brogues.jpg",
@@ -90,7 +90,7 @@ var Shoes = [
         "price": 2700
     },
     {
-        "id": "11",
+        "_id": "11",
         "name": "Track Masters",
         "category": "sports",
         "img": "https://via.placeholder.com/150/track-masters.jpg",
@@ -99,7 +99,7 @@ var Shoes = [
         "price": 2400
     },
     {
-        "id": "12",
+        "_id": "12",
         "name": "Casual Loafers",
         "category": "casual",
         "img": "https://via.placeholder.com/150/casual-loafers.jpg",
@@ -108,7 +108,7 @@ var Shoes = [
         "price": 2200
     },
     {
-        "id": "13",
+        "_id": "13",
         "name": "Sleek Derby Shoes",
         "category": "formal",
         "img": "https://via.placeholder.com/150/sleek-derby-shoes.jpg",
@@ -117,7 +117,7 @@ var Shoes = [
         "price": 2500
     },
     {
-        "id": "14",
+        "_id": "14",
         "name": "Performance Sneakers",
         "category": "sports",
         "img": "https://via.placeholder.com/150/performance-sneakers.jpg",
@@ -126,7 +126,7 @@ var Shoes = [
         "price": 2300
     },
     {
-        "id": "15",
+        "_id": "15",
         "name": "Summer Slip-Ons",
         "category": "casual",
         "img": "https://via.placeholder.com/150/summer-slip-ons.jpg",
@@ -135,7 +135,7 @@ var Shoes = [
         "price": 2100
     },
     {
-        "id": "16",
+        "_id": "16",
         "name": "High-Class Monk Strap",
         "category": "formal",
         "img": "https://via.placeholder.com/150/high-class-monk-strap.jpg",
@@ -144,7 +144,7 @@ var Shoes = [
         "price": 2900
     },
     {
-        "id": "17",
+        "_id": "17",
         "name": "Outdoor Runners",
         "category": "sports",
         "img": "https://via.placeholder.com/150/outdoor-runners.jpg",
@@ -153,7 +153,7 @@ var Shoes = [
         "price": 2500
     },
     {
-        "id": "18",
+        "_id": "18",
         "name": "Chukka Boots",
         "category": "casual",
         "img": "https://via.placeholder.com/150/chukka-boots.jpg",
@@ -162,7 +162,7 @@ var Shoes = [
         "price": 2200
     },
     {
-        "id": "20",
+        "_id": "20",
         "name": "Sleek Casual Sneakers",
         "category": "casual",
         "img": "/images/shoes.png",
