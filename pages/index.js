@@ -11,6 +11,8 @@ import BannerStyles from "../src/Modules/Styles/Banner.module.css"
 import CheckStylesection from "@/Modules/Components/CheckShoes/CheckStylesection";
 import TestimonialPage from "@/Modules/Components/Testimonial/TestimonialPage";
 import MainContactPage from "@/Modules/Components/Contact/MainContactPage";
+import { BsPeople } from "react-icons/bs";
+import People from "@/Modules/People";
 
 
 export default function HomePage() {
@@ -79,6 +81,7 @@ export default function HomePage() {
       <Combosection />
       <TestimonialPage />
       <MainContactPage />
+      <People />
       {/* <Footer /> */}
 
       {/* Footer Copyright */}

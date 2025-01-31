@@ -16,8 +16,8 @@ function CheckStylesection() {
 
       <div className={combostyles["container"]}>
         {Shoes.map((shoes, index) => (
-          <div key={shoes._id}>
-            <Link href={`/shoes/${shoes._id}`}>
+          <div key={shoes.id}>
+            <Link href={`/shoes/${shoes.id}`}>
               <div className={combostyles["image-container"]}>
                 <img
                   src={shoes.img}

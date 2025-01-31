@@ -37,6 +37,7 @@
   .container {
     margin: auto;
     overflow-y: auto;
+    background-color: #faf7f0;
   }
   
   .text-Center {
@@ -209,8 +210,7 @@
   .size-button {
     width: 40px; 
     height: 40px; 
-    border: 1px solid #ccc;
-    background-color: #f8f8f8;
+    background-color: #ffffff;
     cursor: pointer;
     border-radius: 5px;
     display: flex; 
@@ -218,6 +218,7 @@
     align-items: center; 
     font-size: 25px;
     font-weight: bold;
+    border: none;
     transition: 0.3s ease;
   }
   
@@ -275,17 +276,89 @@
     font-weight: 500;
   }
 
-  .add-item-btn
-  {
-    padding: 12px 40px;
-    width: 70%;
+  .add-item-btn {
+    padding: 10px 20px;
+    margin-top: 20px;
     background-color: black;
     color: white;
-    font-family: "Todes light";
-    font-size: 20px;
-    cursor: pointer;
+    border: none;
     border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
     display: flex; 
-    justify-content: center; 
     align-items: center; 
+    justify-content: center; 
+    width: 80%; 
+    height: 40px; 
+    margin: 20px auto; 
+    transition: all 0.3s ease;
   }
+  
+  .add-item-btn:hover {
+    background-color: #005bb5;
+  }
+  
+
+  .color-container {
+    margin-top: 20px;
+  }
+  
+  .color-wrapper {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .color-box {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .color-box:hover {
+    transform: scale(1.1);
+  }
+  
+  .active-color {
+    border: 2px solid #000; /* Highlight selected color */
+  }
+  
+  .size-button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  .active-size {
+    border: 2px solid #000;
+    font-weight: bold;
+  }
+  
+
+  .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: red;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+  }
+  
+  .back-to-top:hover {
+    background-color: #0056b3;
+  }
+  

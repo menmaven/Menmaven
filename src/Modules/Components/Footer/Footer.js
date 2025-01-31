@@ -3,7 +3,7 @@ import FooterStyles from "../../Styles/Footer.module.css"
 
 function Footer() {
   return (
-    <div>
+    <div style={{backgroundColor:'#faf7f0'}}>
       <ul className={FooterStyles["footer-wrapper-container"]}>
         <li  className={FooterStyles["footer-link-text"]}>
             CONTACT US
