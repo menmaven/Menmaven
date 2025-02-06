@@ -169,10 +169,10 @@
       transition: top 0.3s ease-in-out;
     }
     
-    .Heaer-text {
+    .header-text {
       margin-left: 50px;
       word-spacing: 20px;
-      font-family: todes-light;
+      font-family: 'bankgothic-regulardb';
       padding-top: 10px;
       display: flex;
       flex-direction: row;
@@ -180,7 +180,7 @@
       letter-spacing: 4px;
       font-size: 36px;
       color: white;
-      font-weight: 600;
+      /* font-weight: 600; */
     }
     
     .fixed-header-wrapper.fixed {

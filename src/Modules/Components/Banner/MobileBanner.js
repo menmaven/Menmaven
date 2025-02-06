@@ -19,7 +19,7 @@ const MobileBanner = ({ Banner }) => {
       zIndex: 1, 
     }}
   >
-    <p style={{ textAlign: 'center', fontSize:'28px', fontWeight:'600' }}>ALL COLLECTION</p>
+    <p style={{ textAlign: 'center', fontSize:'28px', fontWeight:'600', fontFamily:'Todes light' }}>ALL COLLECTION</p>
   </div>
   <div
     className={BannerStyles["middle-image"]}

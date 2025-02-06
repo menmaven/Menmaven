@@ -8,6 +8,7 @@ import { BsSearch } from "react-icons/bs";
 import { CiHeart } from "react-icons/ci";
 import { TbShoppingBagPlus } from "react-icons/tb";
 import { IoIosMenu } from "react-icons/io";
+import { HiOutlineShoppingBag } from "react-icons/hi2";
 import MobileBanner from "../Banner/MobileBanner";
 // import logo from "../images/logo.png";
 
@@ -39,7 +40,7 @@ const handleLinkClick = () => {
 };
   
   return (
-    <nav className="navbar-one" style={{ position: 'relative', height: '80px', display: 'flex', alignItems: 'center' }}>
+    <nav className="navbar-one" style={{ position: 'relative',display: 'flex', alignItems: 'center' }}>
     <div
       style={{
         position: 'absolute',
@@ -67,18 +68,18 @@ const handleLinkClick = () => {
     height: '50px',
   }}
 />
-<p
+<span
   style={{
     position: 'absolute',
     left: '50%',
     top: '50%',
     transform: 'translate(-50%, 20px)', // Position below the logo
     fontSize: '14px', // Adjust font size if needed
-    fontWeight: 'bold', // Optional: Make the text bold
+    fontFamily:'BankGothic Md BT'
   }}
 >
   MEN MAVEN
-</p>
+</span>
 
 
     <div
@@ -94,7 +95,7 @@ const handleLinkClick = () => {
     >
       <BsSearch size={25} />
       <CiHeart size={30} />
-      <TbShoppingBagPlus size={30} />
+      <HiOutlineShoppingBag size={30} />
     </div>
 
 <Modal
