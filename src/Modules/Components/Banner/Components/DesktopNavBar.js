@@ -1,10 +1,21 @@
 "use client";
 
-import React from 'react'
+import React, { useState } from 'react'
 import { IoIosSearch } from "react-icons/io";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 import BannerStyles from "../../../Styles/Banner.module.css"
+import Modal from '@/Modules/Modal/Modal';
+import ContactUsPage from '../../ContactUsPage/ContactUsPage';
 function DesktopNavBar() {
+
+    const [isShowContactForm, setisShowContactForm] = useState(false);
+    const closeContactForm = () => {
+      setisShowContactForm(false);
+    };
+  
+    const openContactForm = () => {
+      setisShowContactForm(true);
+    };
   return (
     <div >
                 <nav style={{display:'flex', flexDirection:'row',justifyContent:'center', width:'100%'}}>
@@ -16,12 +27,21 @@ function DesktopNavBar() {
         </div>
          <div  className={BannerStyles["nav-left-container"]}>
             <li className={BannerStyles['nav-right-link']}>Categories</li>
-            <li className={BannerStyles['nav-right-link']}>About</li>
+            <li className={BannerStyles['nav-right-link']} onClick={()=> openContactForm()}>About</li>
          <HiOutlineShoppingBag color='black' size={30} />
          </div> 
 
           </ul>
         </nav>
+        <Modal
+        open={isShowContactForm}
+        onClose={closeContactForm}
+        // width={"auto"}
+        // height={"auto"}
+        position={"center"}
+      >
+       <ContactUsPage />
+        </Modal>
     </div>
   )
 }

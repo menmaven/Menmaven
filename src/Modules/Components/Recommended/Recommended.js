@@ -1,23 +1,18 @@
+import Link from 'next/link';
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const Recommended = ({recommend,currentsuggestion}) => {
 
     const { id, img } = recommend;
-
-console.log(recommend, "RECOMMENDEDOPTIONSSS")
-
-
     return (
-        // <Link to={'../food/' + id}>
+        <Link href={`/shoes/${id}`}>
             <img
-                className={id === currentsuggestion.id ? 'selected moor-images mr-3' : 'moor-images mr-3'}
+                className={id === currentsuggestion?.id ? 'selected moor-images mr-3' : 'moor-images mr-3'}
                 src={img}
                 height='150px'
-                // alt="food-image"
                 alt=" "
             />
-        // </Link>
+            </Link>
     );
 };
 

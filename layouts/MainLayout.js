@@ -6,6 +6,7 @@ import MobileBanner from "@/Modules/Components/Banner/MobileBanner";
 import DesktopNavBar from "@/Modules/Components/Banner/Components/DesktopNavBar";
 import Slider from "react-slick";
 import Banner from "@/Modules/Components/Banner/Banner";
+import BannerStyles from "../src/Modules/Styles/Banner.module.css"
 
 const MainLayout = ({ children }) => {
 

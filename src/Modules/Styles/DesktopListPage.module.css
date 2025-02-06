@@ -1,0 +1,127 @@
+
+
+.container {
+    display: flex;
+    gap: 80px;
+    margin: auto;
+    padding: 150px 40px 40px 40px;
+    margin: 0px 80px 50px 50px;
+  }
+  
+  .imageSection {
+    flex: 1;
+    padding: 40px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .productImage {
+    border-radius: 10px;
+
+  }
+  
+  .detailsSection {
+    flex: 1;
+  }
+  
+  .breadcrumb {
+    font-size: 14px;
+    color: gray;
+  }
+  
+  .productTitle {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .price {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .stock {
+    color: green;
+    font-size: 20px;
+  }
+  
+  .description {
+    color: #555;
+    font-size: 20px;
+  }
+  
+  .quantityContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .quantityBtn {
+    background: #ddd;
+    border: none;
+    padding: 5px 15px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .quantity {
+    font-size: 18px;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .addToCart {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .wishlist {
+    background: white;
+    border: 1px solid black;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .sku, .category {
+    color: gray;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .shareIcons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .shareIcons span {
+    font-size: 20px;
+  }
+  
+  .shareBtn {
+    border: none;
+    background: none;
+    font-size: 18px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
