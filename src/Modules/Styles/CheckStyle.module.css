@@ -1,0 +1,232 @@
+
+
+
+@media(min-width: 768px)
+{
+  .container
+{
+display: flex;
+flex-direction: row;
+width: 100%;
+overflow: auto;
+}
+
+.container::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar */
+}
+
+/* For Firefox */
+.container {
+  scrollbar-width: none; /* Hides the scrollbar */
+}
+
+.check-style-text{
+  font-size: 34px;
+  font-weight: 600;
+  padding: 10px 0px;
+  font-family: "todes-light";
+}
+
+.shoes-text
+{
+  font-size: 28px;
+  font-weight: 500;
+  color: black;
+  text-align: center;
+  font-family: "todes-light";
+}
+.see-all-text
+{
+  font-size: 28px;
+  font-weight: 500;
+  color: black;
+  text-decoration: underline;
+  text-align: end;
+  font-family: "todes-light";
+}
+
+  .image-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .image {
+    width: 500px;
+    height: auto;
+    /* display: block; */
+  }
+  
+  /* Formal Dress Text */
+  .formal-dress-text {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: black;
+    font-size: 22px;
+    font-family: "todes-light";
+  }
+  
+  /* Men Combo Text Container */
+  .men-combo-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+  }
+  
+  /* Men Combo Text */
+  .men-combo-text {
+    color: black;
+    font-size: 22px;
+    font-family: "todes-light";
+  }
+  
+  /* More and Plus Container */
+  .more-plus-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  /* More Text */
+  .more-text {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    font-family: "todes-light";
+  }
+  
+  /* Plus Text */
+  .plus-text {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+   
+}
+
+
+@media(max-width: 768px)
+{
+  .container
+{
+display: flex;
+flex-direction: row;
+width: 100%;
+overflow: auto;
+}
+
+.container::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar */
+}
+
+/* For Firefox */
+.container {
+  scrollbar-width: none; /* Hides the scrollbar */
+}
+
+.check-style-text{
+  font-size: 30px;
+  font-weight: 600;
+  /* padding: 10px 0px; */
+  font-family: "todes-light";
+  text-align: start;
+}
+
+.shoes-text
+{
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  text-align: center;
+  font-family: "todes-light";
+}
+.see-all-text
+{
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+  text-decoration: underline;
+  text-align: end;
+  font-family: "todes-light";
+}
+
+  .image-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .image {
+    width: 150px;
+    height: 185px;
+    /* display: block; */
+  }
+  
+  /* Formal Dress Text */
+  .formal-dress-text {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: black;
+    font-size: 22px;
+    font-family: "todes-light";
+  }
+  
+  /* Men Combo Text Container */
+  .men-combo-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+  }
+  
+  /* Men Combo Text */
+  .men-combo-text {
+    color: black;
+    font-size: 22px;
+    font-family: "todes-light";
+  }
+  
+  /* More and Plus Container */
+  .more-plus-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  /* More Text */
+  .more-text {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    font-family: "todes-light";
+  }
+  
+  /* Plus Text */
+  .plus-text {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+   
+}

@@ -1,0 +1,184 @@
+
+
+@media(min-width: 768px) 
+{
+  .testimonialContainer {
+    width: 400px;
+    height: auto;
+    margin-bottom: 30px;
+  }
+  
+  .testimonial-heading-text
+  {
+    font-size: 34px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-family: "todes-light";
+  }
+  .ratingContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin: 2px 40px;
+  }
+  
+  .testimonialCard {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 0 8px 24px rgba(0, 0, 0, 0.1);
+  }
+  
+  .reviewText {
+    font-size: 16px;
+    color: black;
+    font-weight: 400;
+  }
+  
+  .userInfoContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .userAvatar {
+    background-color: red;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  
+  .userDetails {
+    align-self: center;
+  }
+  
+  .userName {
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+  }
+  
+  .user-address {
+    font-size: 16px;
+    color: black;
+    font-weight: 400;
+  }
+  
+  .testimonial-frame-div {
+    width: 85%;
+    position: relative;
+    height: 392px;
+    /*margin-left:85px;/*85px;*/
+    margin-bottom: 90px;
+    border-radius: 8px;
+    margin-left: 7%;
+  }
+ .margin{
+  margin: 20px 70px;
+  height: 400px;
+ }
+  .corporatecard-next-arrow{
+right: -85px;
+  }
+  
+  .testimonial-next-arrow{
+    right: -25px;
+  }
+}
+
+
+@media(max-width: 768px)
+{
+  .testimonialContainer {
+    width: 350px;
+    min-height: 200px;
+    margin-bottom: 30px;
+  }
+  
+  .testimonial-heading-text
+  {
+    font-size: 34px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "todes-light";
+  }
+  .ratingContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    /* margin: 2px 40px; */
+  }
+  
+  .testimonialCard {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 0 8px 24px rgba(0, 0, 0, 0.1);
+  }
+  
+  .reviewText {
+    font-size: 16px;
+    color: black;
+    font-weight: 400;
+  }
+  
+  .userInfoContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .userAvatar {
+    background-color: red;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  
+  .userDetails {
+    align-self: center;
+  }
+  
+  .userName {
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+  }
+  
+  .user-address {
+    font-size: 16px;
+    color: black;
+    font-weight: 400;
+  }
+  
+  .testimonial-frame-div {
+    width: 85%;
+    position: relative;
+    height: 392px;
+    /*margin-left:85px;/*85px;*/
+    margin-bottom: 90px;
+    border-radius: 8px;
+    margin-left: 7%;
+  }
+ .margin{
+  margin: 20px 30px;
+  /* height: 400px; */
+ }
+  .corporatecard-next-arrow{
+right: -85px;
+  }
+  
+  .testimonial-next-arrow{
+    right: -25px;
+  }
+
+}
+
+  @media(max-width: 915){
+    .margin{
+      margin: 0;
+    }
+  }
