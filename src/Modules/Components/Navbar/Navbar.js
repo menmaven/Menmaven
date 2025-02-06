@@ -8,6 +8,7 @@ import { CiHeart } from "react-icons/ci";
 import { TbShoppingBagPlus } from "react-icons/tb";
 import { IoIosMenu } from "react-icons/io";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
+import ContactUsPage from "../ContactUsPage/ContactUsPage";
 
 const Navbar = () => {
   const [width, setWidth] = useState(0);
@@ -31,6 +32,8 @@ const Navbar = () => {
   const openmenu = () => {
     setIsShowModal(true);
   };
+
+
 
   const handleLinkClick = () => {
     closemenu();
@@ -141,7 +144,7 @@ const Navbar = () => {
             </a>
           </li>
 
-          <li className="navbar-link-text">
+          <li className="navbar-link-text" >
             <a href={"/"} className="nav-link " onClick={handleLinkClick}>
               About
             </a>
@@ -154,6 +157,8 @@ const Navbar = () => {
           {/* Add other navigation items here */}
         </ul>
       )}
+
+
     </nav>
   );
 };

@@ -8,7 +8,19 @@
         list-style: none;
         margin-left: 30px;
         margin-top: 100px;
+        cursor: pointer;
     }
+    .footer-wrapper-container li {
+        list-style: none; /* Remove bullet points */
+        text-decoration: none; /* Remove underlines if present */
+        border-bottom: none; /* Make sure there's no border */
+      }
+      
+      .footer-wrapper-container li:hover {
+        text-decoration: none; /* Ensure no text decoration on hover */
+        border-bottom: none; /* Remove any bottom border on hover */
+      }
+      
     .footer-link-text
     {
         font-size: 32px;

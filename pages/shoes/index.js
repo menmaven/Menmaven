@@ -39,7 +39,7 @@ function Index() {
   };
 
   return (
-    <div style={{ display: 'grid', gridTemplateColumns: '50% 50%' }}>
+    <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr 1fr 1fr',justifyContent:'center',width:'100%'}}>
       {Shoes.map((shoes, index) => (
         <Link href={`/shoes/${shoes?.id}`} key={index}>
           {width > 768 ? (

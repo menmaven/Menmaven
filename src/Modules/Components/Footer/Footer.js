@@ -3,8 +3,8 @@ import FooterStyles from "../../Styles/Footer.module.css"
 
 function Footer() {
   return (
-    <div style={{backgroundColor:'#faf7f0'}}>
-      <ul className={FooterStyles["footer-wrapper-container"]}>
+    <div style={{backgroundColor:'#faf7f0', padding:'10px 0px'}}>
+      <ul className={FooterStyles["footer-wrapper-container"]} style={{listStyle:'none'}}>
         <li  className={FooterStyles["footer-link-text"]}>
             CONTACT US
         </li>

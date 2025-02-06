@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import Shoes from "@/Modules/Components/Constants/Shoes";
 import DetailsPage from '../../src/Modules/Components/DetailsPage/DetailsPage'
 import allItems from "../../src/Modules/Components/Constants/index";
+import DesktopDetailsPage from "@/Modules/Components/DetailsPage/DesktopDetailsPage";
 
 
 function ShoeDetailsPage() {
@@ -24,7 +25,7 @@ function ShoeDetailsPage() {
 
   return (
       <div>
-        <DetailsPage 
+        <DesktopDetailsPage 
         shoeDetails={shoeDetails}
         />
       </div>

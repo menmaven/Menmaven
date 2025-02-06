@@ -23,7 +23,7 @@ function TestimonialPage() {
         prevArrow: <PrevArrow styleClass={styles['corporatecard-prev-arrow']} image={'https://vmnk.gumlet.io/rightArrow.svg'}/>,
         responsive: [
           {
-            breakpoint: 430,
+            breakpoint: 768,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
