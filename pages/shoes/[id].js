@@ -4,6 +4,9 @@ import React from "react";
 import { useRouter } from "next/router";
 import Shoes from "@/Modules/Components/Constants/Shoes";
 import DetailsPage from '../../src/Modules/Components/DetailsPage/DetailsPage'
+import allItems from "../../src/Modules/Components/Constants/index";
+import DesktopDetailsPage from "@/Modules/Components/DetailsPage/DesktopDetailsPage";
+
 
 function ShoeDetailsPage() {
   const router = useRouter();
@@ -13,7 +16,8 @@ function ShoeDetailsPage() {
     return <p>Loading...</p>;
   }
 
-  const shoeDetails = Shoes.find(shoe => shoe._id === id);
+  // const shoeDetails = Shoes.find(shoe => shoe.id === id);
+  const shoeDetails = allItems.find((item) => item.id === id);
 
   if (!shoeDetails) {
     return <p>Shoe not found</p>;
@@ -21,7 +25,7 @@ function ShoeDetailsPage() {
 
   return (
       <div>
-        <DetailsPage 
+        <DesktopDetailsPage 
         shoeDetails={shoeDetails}
         />
       </div>

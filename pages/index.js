@@ -54,7 +54,6 @@ export default function HomePage() {
 
   return (
     <div style={{ backgroundColor: "#FAF7F0" }}>
-      {/* Header Section */}
       {width < 768 ? (
         <>
           <MobileBanner />
@@ -62,7 +61,6 @@ export default function HomePage() {
       ) : (
         <>
 
-          {/* Carousel Banner */}
           <Slider {...settings}>
             <Banner width={width} />
             <Banner width={width} />
@@ -73,44 +71,11 @@ export default function HomePage() {
         </>
       )}
 
-      {/* Page Sections */}
       <Combosection />
       <CheckStylesection />
       <Combosection />
       <TestimonialPage />
-      <MainContactPage />
-      {/* <Footer /> */}
-
-      {/* Footer Copyright */}
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          marginTop: "40px",
-        }}
-      >
-        <p
-          style={{
-            fontSize: "24px",
-            color: "black",
-            fontWeight: "400",
-            textAlign: "center",
-          }}
-        >
-          Copyright © 2024 MenMaven
-        </p>
-        <p
-          style={{
-            fontSize: "24px",
-            color: "black",
-            fontWeight: "400",
-            textAlign: "center",
-          }}
-        >
-          All Rights Reserved
-        </p>
-      </div>
+      <MainContactPage width={width}/>
     </div>
   );
 }

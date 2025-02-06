@@ -13,7 +13,7 @@ function BannerCard({image, prize,text}) {
             
           <div > 
           <Image
-            src={image}
+            src="/Images/belt.png"
             width={140}
             height={100}
             alt="banner"

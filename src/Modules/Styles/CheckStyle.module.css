@@ -1,59 +1,54 @@
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: auto;
+  }
 
+  .container::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar */
+  }
 
+  /* For Firefox */
+  .container {
+    scrollbar-width: none; /* Hides the scrollbar */
+  }
 
-@media(min-width: 768px)
-{
-  .container
-{
-display: flex;
-flex-direction: row;
-width: 100%;
-overflow: auto;
-}
+  .check-style-text {
+    font-size: 34px;
+    font-weight: 600;
+    padding: 10px 0px;
+    font-family: "Todes light";
+  }
 
-.container::-webkit-scrollbar {
-  display: none; /* Hides the scrollbar */
-}
-
-/* For Firefox */
-.container {
-  scrollbar-width: none; /* Hides the scrollbar */
-}
-
-.check-style-text{
-  font-size: 34px;
-  font-weight: 600;
-  padding: 10px 0px;
-  font-family: "todes-light";
-}
-
-.shoes-text
-{
-  font-size: 28px;
-  font-weight: 500;
-  color: black;
-  text-align: center;
-  font-family: "todes-light";
-}
-.see-all-text
-{
-  font-size: 28px;
-  font-weight: 500;
-  color: black;
-  text-decoration: underline;
-  text-align: end;
-  font-family: "todes-light";
-}
+  .shoes-text {
+    font-size: 28px;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+    font-family: "Todes light";
+  }
+  .see-all-text {
+    font-size: 28px;
+    font-weight: 500;
+    color: black;
+    text-decoration: underline;
+    text-align: end;
+    font-family: "Todes light";
+  }
 
   .image-container {
     position: relative;
     width: 100%;
   }
+
   .image {
     width: 500px;
     height: auto;
     /* display: block; */
   }
+
   /* Formal Dress Text */
   .formal-dress-text {
     position: absolute;
@@ -74,6 +69,7 @@ overflow: auto;
     gap: 5px;
     align-items: flex-start;
   }
+
   /* Men Combo Text */
   .men-combo-text {
     color: black;
@@ -87,6 +83,7 @@ overflow: auto;
     align-items: center;
     gap: 5px;
   }
+
   /* More Text */
   .more-text {
     background-color: black;
@@ -156,11 +153,13 @@ overflow: auto;
     position: relative;
     width: 100%;
   }
+
   .image {
     width: 150px;
     height: 185px;
     /* display: block; */
   }
+
   /* Formal Dress Text */
   .formal-dress-text {
     position: absolute;
@@ -181,6 +180,7 @@ overflow: auto;
     gap: 5px;
     align-items: flex-start;
   }
+
   /* Men Combo Text */
   .men-combo-text {
     color: black;
@@ -194,6 +194,7 @@ overflow: auto;
     align-items: center;
     gap: 5px;
   }
+
   /* More Text */
   .more-text {
     background-color: black;

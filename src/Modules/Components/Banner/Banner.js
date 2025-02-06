@@ -18,7 +18,7 @@ const Banner = ({ Banner }) => {
         />
       </div>
       <div>
-        <BannerCard text={HEADER} image={"/image/Comboimage.png"} prize={870} />
+        <BannerCard text={HEADER} image={"/Image/belt.png"} prize={870} />
       </div>
       <div className={BannerStyles["middle-wrapper"]}>
         <h1 className={BannerStyles["middle-text"]}>NEW COLLECTION</h1>

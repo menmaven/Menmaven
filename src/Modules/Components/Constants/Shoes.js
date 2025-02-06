@@ -1,6 +1,6 @@
 var Shoes = [
     {
-        "_id": "1",
+        "id": "61",
         "name": "Elegant Oxford",
         "category": "formal",
         "img": "https://via.placeholder.com/150/elegant-oxford.jpg",
@@ -9,7 +9,7 @@ var Shoes = [
         "price": 2500
     },
     {
-        "_id": "2",
+        "id": "62",
         "name": "Sporty Sneakers",
         "category": "sports",
         "img": "/images/comboimagetwo.jpg",
@@ -18,7 +18,7 @@ var Shoes = [
         "price": 2200
     },
     {
-        "_id": "3",
+        "id": "63",
         "name": "Running Pro",
         "category": "sports",
         "img": "https://via.placeholder.com/150/running-pro.jpg",
@@ -27,7 +27,7 @@ var Shoes = [
         "price": 2300
     },
     {
-        "_id": "4",
+        "id": "64",
         "name": "Leather Loafers",
         "category": "formal",
         "img": "https://via.placeholder.com/150/leather-loafers.jpg",
@@ -36,7 +36,7 @@ var Shoes = [
         "price": 2800
     },
     {
-        "_id": "5",
+        "id": "65",
         "name": "Casual Boat Shoes",
         "category": "casual",
         "img": "https://via.placeholder.com/150/casual-boat-shoes.jpg",
@@ -45,7 +45,7 @@ var Shoes = [
         "price": 2100
     },
     {
-        "_id": "6",
+        "id": "66",
         "name": "Sporty High-Top",
         "category": "sports",
         "img": "https://via.placeholder.com/150/sporty-high-top.jpg",
@@ -54,7 +54,7 @@ var Shoes = [
         "price": 2400
     },
     {
-        "_id": "7",
+        "id": "67",
         "name": "Weekend Sneakers",
         "category": "casual",
         "img": "https://via.placeholder.com/150/weekend-sneakers.jpg",
@@ -63,7 +63,7 @@ var Shoes = [
         "price": 2200
     },
     {
-        "_id": "8",
+        "id": "68",
         "name": "Classic Derby",
         "category": "formal",
         "img": "https://via.placeholder.com/150/classic-derby.jpg",
@@ -72,7 +72,7 @@ var Shoes = [
         "price": 2600
     },
     {
-        "_id": "9",
+        "id": "69",
         "name": "Slip-On Comfort",
         "category": "casual",
         "img": "https://via.placeholder.com/150/slip-on-comfort.jpg",
@@ -81,7 +81,7 @@ var Shoes = [
         "price": 2300
     },
     {
-        "_id": "10",
+        "id": "70",
         "name": "Classic Brogues",
         "category": "formal",
         "img": "https://via.placeholder.com/150/classic-brogues.jpg",
@@ -90,7 +90,7 @@ var Shoes = [
         "price": 2700
     },
     {
-        "_id": "11",
+        "id": "71",
         "name": "Track Masters",
         "category": "sports",
         "img": "https://via.placeholder.com/150/track-masters.jpg",
@@ -99,7 +99,7 @@ var Shoes = [
         "price": 2400
     },
     {
-        "_id": "12",
+        "id": "72",
         "name": "Casual Loafers",
         "category": "casual",
         "img": "https://via.placeholder.com/150/casual-loafers.jpg",
@@ -108,7 +108,7 @@ var Shoes = [
         "price": 2200
     },
     {
-        "_id": "13",
+        "id": "73",
         "name": "Sleek Derby Shoes",
         "category": "formal",
         "img": "https://via.placeholder.com/150/sleek-derby-shoes.jpg",
@@ -117,7 +117,7 @@ var Shoes = [
         "price": 2500
     },
     {
-        "_id": "14",
+        "id": "74",
         "name": "Performance Sneakers",
         "category": "sports",
         "img": "https://via.placeholder.com/150/performance-sneakers.jpg",
@@ -126,7 +126,7 @@ var Shoes = [
         "price": 2300
     },
     {
-        "_id": "15",
+        "id": "75",
         "name": "Summer Slip-Ons",
         "category": "casual",
         "img": "https://via.placeholder.com/150/summer-slip-ons.jpg",
@@ -135,7 +135,7 @@ var Shoes = [
         "price": 2100
     },
     {
-        "_id": "16",
+        "id": "76",
         "name": "High-Class Monk Strap",
         "category": "formal",
         "img": "https://via.placeholder.com/150/high-class-monk-strap.jpg",
@@ -144,7 +144,7 @@ var Shoes = [
         "price": 2900
     },
     {
-        "_id": "17",
+        "id": "77",
         "name": "Outdoor Runners",
         "category": "sports",
         "img": "https://via.placeholder.com/150/outdoor-runners.jpg",
@@ -153,7 +153,7 @@ var Shoes = [
         "price": 2500
     },
     {
-        "_id": "18",
+        "id": "78",
         "name": "Chukka Boots",
         "category": "casual",
         "img": "https://via.placeholder.com/150/chukka-boots.jpg",
@@ -162,7 +162,7 @@ var Shoes = [
         "price": 2200
     },
     {
-        "_id": "20",
+        "id": "79",
         "name": "Sleek Casual Sneakers",
         "category": "casual",
         "img": "/images/shoes.png",
