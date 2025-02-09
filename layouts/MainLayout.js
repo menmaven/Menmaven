@@ -62,7 +62,7 @@ const MainLayout = ({ children }) => {
               isFixed ? BannerStyles["fixed"] : ""
             }`}
           >
-            <h2 className={BannerStyles["header-text"]}>
+            <h2 className={`${isFixed ? BannerStyles["header-text"] : BannerStyles["header-text1"]}` }>
               MEN<span style={{ color: "black", marginLeft: "4px" }}>MAVEN</span>
             </h2>
             <DesktopNavBar />

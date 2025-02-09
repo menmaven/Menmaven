@@ -2,7 +2,11 @@ import React from "react";
 import Image from "next/image";
 import BannerStyles from "../../Styles/Banner.module.css";
 import BannerCard from "./Components/BannerCard";
-import {BANNER_HEADING,BANNER_SUBHEADING,HEADER,} from "../Constants/BannerConstants";
+import {
+  BANNER_HEADING,
+  BANNER_SUBHEADING,
+  HEADER,
+} from "../Constants/BannerConstants";
 import DesktopNavBar from "./Components/DesktopNavBar";
 
 const Banner = ({ Banner }) => {

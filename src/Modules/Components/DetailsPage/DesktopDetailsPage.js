@@ -9,7 +9,7 @@ const DesktopDetailsPage = () => {
     <div className={styles.container}>
       <div className={styles.imageSection}>
         <Image
-          src="/images/belt.png" // Replace with actual image path
+          src="/images/belt.png" 
           alt="Pearl Ear Earrings"
           width={500}
           height={500}

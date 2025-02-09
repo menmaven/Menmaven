@@ -1,6 +1,4 @@
 import styles from "../../Styles/ProductCard.module.css";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faShoppingCart, faHeart } from "@fortawesome/free-solid-svg-icons";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { CiHeart } from "react-icons/ci";
 

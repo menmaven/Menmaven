@@ -1,14 +1,5 @@
-// import React from 'react'
-
-// function ListPage({shoes}) {
-//   return (
-//     <div>{shoes.name}</div>
-//   )
-// }
-
-// export default ListPage
 import React from 'react';
-import styles from '../../Styles/ListPage.module.css'; // Import CSS module
+import styles from '../../Styles/ListPage.module.css'; 
 import { IoBookmarkOutline } from "react-icons/io5";
 
 const ListPage = () => {

@@ -13,7 +13,7 @@ import ContactUsPage from "../ContactUsPage/ContactUsPage";
 const Navbar = () => {
   const [width, setWidth] = useState(0);
   const [isShowModal, setIsShowModal] = useState(false);
-  const [cartItemCount, setCartItemCount] = useState(4); // Number of items in the cart
+  const [cartItemCount, setCartItemCount] = useState(4); 
 
   useEffect(() => {
     const handleResize = () => {
@@ -33,14 +33,20 @@ const Navbar = () => {
     setIsShowModal(true);
   };
 
-
-
   const handleLinkClick = () => {
     closemenu();
   };
 
   return (
-    <nav className="navbar-one" style={{ position: "relative", display: "flex", alignItems: "center", height:"80px" }}>
+    <nav
+      className="navbar-one"
+      style={{
+        position: "relative",
+        display: "flex",
+        alignItems: "center",
+        height: "80px",
+      }}
+    >
       <div
         style={{
           position: "absolute",
@@ -63,7 +69,7 @@ const Navbar = () => {
           position: "absolute",
           left: "50%",
           top: "50%",
-          transform: "translate(-50%, -65%)", // Adjust the Y translation to make space for the text below
+          transform: "translate(-50%, -65%)",
           width: "72px",
           height: "38px",
         }}
@@ -73,8 +79,8 @@ const Navbar = () => {
           position: "absolute",
           left: "50%",
           top: "50%",
-          transform: "translate(-50%, 20px)", // Position below the logo
-          fontSize: "14px", // Adjust font size if needed
+          transform: "translate(-50%, 20px)",
+          fontSize: "14px",
           fontFamily: "BankGothic Md BT",
         }}
       >
@@ -144,7 +150,7 @@ const Navbar = () => {
             </a>
           </li>
 
-          <li className="navbar-link-text" >
+          <li className="navbar-link-text">
             <a href={"/"} className="nav-link " onClick={handleLinkClick}>
               About
             </a>
@@ -153,45 +159,10 @@ const Navbar = () => {
       </Modal>
 
       {width > 768 && (
-        <ul className="nav-list">
-          {/* Add other navigation items here */}
-        </ul>
+        <ul className="nav-list">{/* Add other navigation items here */}</ul>
       )}
-
-
     </nav>
   );
 };
 
 export default Navbar;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

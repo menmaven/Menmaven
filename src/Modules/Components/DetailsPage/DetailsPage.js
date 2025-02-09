@@ -10,7 +10,7 @@ const DetailsPage = ({ shoeDetails }) => {
   const router = useRouter();
   const { id } = router.query;
   const currentsuggestion = allItems.find((item) => item.id === id);
-console.log(currentsuggestion, "CURRERERERETETEGEFEFFEFEFE")
+  console.log(currentsuggestion, "CURRERERERETETEGEFEFFEFEFE");
   const [quantity, setQuantity] = useState(1);
   const [size, setSize] = useState(null);
   const [color, setColor] = useState(null);
@@ -52,26 +52,23 @@ console.log(currentsuggestion, "CURRERERERETETEGEFEFFEFEFE")
   const selectSize = (selectedSize) => setSize(selectedSize);
   const selectColor = (selectedColor) => setColor(selectedColor);
 
-//   const cartHandler = (currentItem) => {
-//     debugger
-//     console.log(cart, "cararartata")
-//     const alreadyAdded = cart.find((item) => item.id === currentItem.id);
-// console.log(alreadyAdded, "QKWDHQJKWHDJQKWHDQWHD")
-//     if (alreadyAdded) {
-//       const updatedCart = cart.map((item) =>
-//         item.id === currentItem.id
-//           ? { ...item, quantity: item.quantity + currentItem.quantity }
-//           : item
-//       );
-//       setCart(updatedCart);
-//     } else {
-//       const newCart = [...cart, currentItem];
-//       setCart(newCart);
-//     }
-//   };
-
-
-
+  //   const cartHandler = (currentItem) => {
+  //     debugger
+  //     console.log(cart, "cararartata")
+  //     const alreadyAdded = cart.find((item) => item.id === currentItem.id);
+  // console.log(alreadyAdded, "QKWDHQJKWHDJQKWHDQWHD")
+  //     if (alreadyAdded) {
+  //       const updatedCart = cart.map((item) =>
+  //         item.id === currentItem.id
+  //           ? { ...item, quantity: item.quantity + currentItem.quantity }
+  //           : item
+  //       );
+  //       setCart(updatedCart);
+  //     } else {
+  //       const newCart = [...cart, currentItem];
+  //       setCart(newCart);
+  //     }
+  //   };
 
   const finalCartHandler = (currentItem) => {
     if (!size || !color) {
@@ -80,8 +77,8 @@ console.log(currentsuggestion, "CURRERERERETETEGEFEFFEFEFE")
     }
 
     const itemToAdd = {
-      ...currentItem, // Includes all properties of the current item
-      quantity: quantity || 1, // Ensure quantity is always defined
+      ...currentItem,
+      quantity: quantity || 1,
       size,
       color,
     };
@@ -91,14 +88,14 @@ console.log(currentsuggestion, "CURRERERERETETEGEFEFFEFEFE")
 
     setTimeout(() => {
       setIsSuccess(false);
-      router.push("/cart"); // Redirect to the cart page
+      router.push("/cart");
     }, 1500);
   };
 
   const cartHandler = (currentItem) => {
     const alreadyAdded = cart.find((item) => item.id === currentItem.id);
     if (alreadyAdded) {
-      debugger
+      debugger;
       // If the item is already in the cart, update the quantity
       const updatedCart = cart.map((item) =>
         item.id === currentItem.id
@@ -106,7 +103,6 @@ console.log(currentsuggestion, "CURRERERERETETEGEFEFFEFEFE")
           : item
       );
       setCart(updatedCart);
-  
     } else {
       // If the item is not in the cart, add it
       const newCart = [...cart, currentItem];
@@ -130,7 +126,7 @@ console.log(currentsuggestion, "CURRERERERETETEGEFEFFEFEFE")
     "red",
   ];
 
-console.log(cart , "CARARARATARARATARATARATARTARATRA")
+  console.log(cart, "CARARARATARARATARATARATARTARATRA");
 
   return (
     <div className={styles["container"]}>

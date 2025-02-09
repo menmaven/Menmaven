@@ -29,7 +29,7 @@ const Button = ({
             type={type}
         >
             <span style={{ color: textcolor, fontSize: textSize ? textSize : '14px' }}>{text}</span>
-            {icon && <Image src={icon} />} {/* Add the icon */}
+            {icon && <Image src={icon} />} 
         </button>
     );
 };
